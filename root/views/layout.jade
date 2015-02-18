@@ -25,7 +25,7 @@ html
         .logo-small: h2 <%= S(name).titleize().value() %>
         ul
           <% for(var i=0; i<menu_items.length; i++) { %>
-          li(data-id='<%= S(menu_items[i]).slugify().value() %>'): a(href='#<%= S(menu_items[i]).slugify().value() %>') <%= S(name).titleize().value() %> 
+          li(data-id='<%= S(menu_items[i]).slugify().value() %>'): a(href='#<%= S(menu_items[i]).slugify().value() %>') <%= S(menu_items[i]).titleize().value() %> 
           <% } %>
           
       main

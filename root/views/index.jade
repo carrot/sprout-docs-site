@@ -2,15 +2,13 @@ extends layout
 
 block content
   <% for(var i=0; i<menu_items.length; i++) { %>
-  li(data-id='<%= S(menu_items[i]).slugify().value() %>'): a(href='#<%= S(menu_items[i]).slugify().value() %>') <%= S(name).titleize().value() %> 
-  
   .intro
-    h1#<%= S(menu_items[i]).slugify().value() %> <%= S(name).titleize().value() %> 
+    h1#<%= S(menu_items[i]).slugify().value() %> <%= S(menu_items[i]).titleize().value() %> 
     :markdown
-      Intro copy for <%= S(name).titleize().value() %> section
+      Intro copy for <%= S(menu_items[i]).titleize().value() %> section
     
-    section
-      :markdown
-        Rest of the documentation for <%= S(name).titleize().value() %> section
+  section
+    :markdown
+      Rest of the documentation for <%= S(menu_items[i]).titleize().value() %> section
   
   <% } %>
