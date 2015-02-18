@@ -5,7 +5,8 @@ a sprout template for generating a basic docs site
 ### Installation
 
 - `npm install sprout -g`
-- `sprout add node https://github.com/carrot/sprout-docs-site.git`
+- `sprout add docs https://github.com/carrot/sprout-docs-site.git`
+- `sprout new docs myprojectname`
 
 ### Options
 
