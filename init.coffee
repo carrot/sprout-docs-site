@@ -27,5 +27,5 @@ exports.configure = [
 ]
 
 exports.before_render = (sprout, done) ->
-  sprout.config_values.menu_items.split(' ')
+  sprout.config_values.menu_items = sprout.config_values.menu_items.split(' ')
   done()
